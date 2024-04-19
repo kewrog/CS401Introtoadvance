@@ -1,0 +1,16 @@
+1.I used the Eclipse IDE to complete this assignment. I have created the java project as Lab 9 and the package also as Lab 9.
+2.In the package I created two classes Node and BinarySearchTree. 
+3.Node- This class represents one node in the Binary Search Tree, Int key – the value or key contained in the node, Node left- left child of the node, and Node right – right child of the node. This is the constructor of the Node class. It initializes a new node with a given item as its key and sets its left and right children to null, indicating that it has no children when created.
+4.BinarySearchTree – This class encapsulates the behavior of the entire binary search tree.
+5.Node root – This property is the entry point of the BinarySearchTree.
+6.The insert method is used to insert a new key into the BST. It calls the recursive method insertRec, which will find the correct place for the new key and insert it into the tree.
+7.insertRec is a recursive method that navigates the tree to find the correct spot to insert the new key. It compares the key with the current node's key and moves left or right accordingly, and inserts the new key once it finds a null spot.
+8.maxDepth computes the maximum depth of the tree. If it encounters a null node, it returns 0 (base case). Otherwise, it calls itself on both the left and right subtrees (maxDepth(node.left) and maxDepth(node.right)), finds the larger depth between the two, and adds 1 (for the current node's depth).
+9.size(Node node): A recursive method that counts each node by adding the size of the left subtree to the size of the right subtree and adding 1 (for the current node).
+10.iterativeSize(): This method uses a Queue to perform a level-order traversal of the tree, counting nodes without recursion.
+11.inOrder: Left, Root, Right - used for getting the keys in ascending order.
+12.preOrder: Root, Left, Right - can be used to create a copy of the tree.
+13.postOrder: Left, Right, Root - can be used to delete the tree.
+14.The main method serves as the entry point for the program. It creates an instance of BinarySearchTree, inserts a predetermined set of keys into the tree, and then calls the various methods to display the maximum depth, the size of the tree, and the traversals of the tree.
+15.Then we get the output. Then export the jar file from the Ide.
+16.To run the jar file in the command prompt – “ java -jar "C:\Users\hp\Desktop\lab9.jar" “. it executes the output in the cmd prompt.
